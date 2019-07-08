@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+.section-header {
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+.section-header p {
+    font-size: 16px
+}
+
+.section-header .section-title {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-header .section-title::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #e62d3f;
+    margin: 20px auto 0 auto;
+}
+
+
+
+
+.title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* section */
+.section-padding {
+    padding: 0px 0 80px 0;
+}
+
+h2{font-size:42px; font-weight:800;}
+
+
+.tran3s {
+    transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    -ms-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+}
+
+
+
+
+/* 
+==========================================
+SERVICES SECTION
+==========================================
+*/
+
+.service-section {
+    background: #232a34;
+    color: #fff;
+}
+
+.service-section .row [class*="col-"] {
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.service-box {
+    position: relative;
+    padding: 20px 10px;
+    min-height: 300px;
+    padding-top: 30px;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+}
+
+.service-box p {
+    color: #fff;
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: -100%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+
+.service-box .box-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+    }
+
+    75% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+.service-box:hover .box-top i {
+    animation: zoom;
+    -webkit-animation: zoom;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .3s;
+}
+
+.service-box .box-top i {
+    font-size: 48px;
+    display: inline-block;
+    width: 80px;
+    background: #232a34;
+}
+
+
+
+.service-box .box-top h6 {
+    padding: 30px 0px;
+    color: #808489;
+}
+
+.service-box:hover .box-top {
+    top: 35px;
+    color: #e62d3f;
+}
+
+.service-box:hover {
+    border-color: #e62d3f;
+
+}
+
+.service-box:hover .box-top h6 {
+    color: #e62d3f;
+}
+
+.service-box:hover p {
+    bottom: 50px;
+    transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: .4s;
+    bottom: 50px;
+}
+
+.gradiant-border {
+    background: linear-gradient(33deg, #a5398a, #9c2949, #5f2797, #526fcf, #005B50, rgb(32, 156, 34), #d35400, #c0392b, #8e44ad, #16a085, #637e99);
+    padding: 1px;
+
+}
+
+.service-box {
+    background: #232a34 !important;
+}
+
